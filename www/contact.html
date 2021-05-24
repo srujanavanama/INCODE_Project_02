@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./application.css" rel="stylesheet" type="text/css">
+    <script src="./form.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="flex space-between">
+            <a href="./index.html"><img class="logo" src="./assets/full_logo_white.png"
+                    alt="Full logo dark MR.COFFEE" /></a>
+            <div>
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">Qui sommes-nous?</a>
+                <a href="./contact.html">Nous contacter</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page">
+            <section>
+                <img class="intro logo center" src="./assets/logo_mrcoffee.png" alt="Full logo MR.COFFEE" />
+            </section>
+            <section>
+                <p class="grey text center">Dites nous tout !</p>
+            </section>
+            <section class="user input grey text">
+                <form>
+                    <div>
+                        <label for="lname">Nom *</label>
+                        <input id="lname" type="text" name="last-name" required maxlength="30" />
+                    </div>
+                    <div>
+                        <label for="fname">Prénom *</label>
+                        <input id="fname" type="text" name="first-name" required maxlength="30" />
+                    </div>
+                    <div>
+                        <label for="phone">Téléphone</label>
+                        <input id="phone" type="number" name="phone" />
+                    </div>
+                    <div>
+                        <label for="email">Adresse mail *</label>
+                        <input id="email" type="email" name="email" required />
+                    </div>
+                    <div>
+                        <label for="message">Message *</label>
+                        <input class="white text" id="message" type="text" name="message"
+                            value="Tapez votre message ici" required maxlength="300" />
+                    </div>
+                    <button class="center" id="formSubmit" type="submit">ENVOYER</button>
+                </form>
+            </section>
+            <section class="popup center">
+                <div class="popup-content">
+                    <div class="clearfix">
+                        <img class="dark-logo" src="./assets/logo_dark.png" alt="Logo Dark">
+                        <h1 class="popup-heading"><strong>MERCI</strong></h1>
+                        <h1 class="popup-heading"><strong>Votre message a bien été envoyé !</strong></h1>
+                    </div>
+                    <br />
+                    <h3 class="popup-description">
+                        <strong>
+                        Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee
+                    </strong>
+                    </h3>
+                    <button class="close-popup center">FERMER</button>
+                </div>
+            </section>
+            <section>
+                <p class="grey text center">On vous attend !</p>
+            </section>
+            <section class="grey text left">
+                <p><strong>Mr.Coffee</strong></p>
+                <p>15 place Jules Guesde</p>
+                <p>Tel : +33 9 46 25 78 45</p>
+                <br />
+                <p>75006 Paris</p>
+                <p>Mail : contact@mr-coffee.com</p>
+            </section>
+            <section class="map">
+                <img src="./assets/carte_contact.png" alt="carte contact" class="carte-contact">
+            </section>
+        </div>
+    </main>
+    <footer class="flex space-between">
+        <img class="logo bottom" src="./assets/logo_blanc.png" alt="Logo blanc" />
+        <div class="center">
+            <p class="white text">Suivez nous sur les réseaux sociaux !</p>
+            <img class="social" src="./assets/logo_linkedin.png" alt="Linkedin logo" />
+            <img class="social" src="./assets/logo_twitter.png" alt="Twitter logo" />
+            <img class="social" src="./assets/logo_facebook.png" alt="Facebook logo" />
+        </div>
+    </footer>
+</body>
+
+</html>
